@@ -564,7 +564,9 @@ module.exports = function( grunt ) {
 				}
 
 				options.sectionContent = options.content[ options.section ];
-			}
+			} else {
+                options.sectionContent = options.content;
+            }
 
 			bakeFile( src, dest, options.sectionContent );
 		} );
