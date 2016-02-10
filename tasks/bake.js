@@ -563,10 +563,10 @@ module.exports = function( grunt ) {
 					grunt.log.error( "content doesn't have section " + options.section );
 				}
 
-				options.content = options.content[ options.section ];
+				options.sectionContent = options.content[ options.section ];
 			}
 
-			bakeFile( src, dest, options.content );
+			bakeFile( src, dest, options.sectionContent );
 		} );
 	} );
 };
